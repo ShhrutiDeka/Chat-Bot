@@ -1,0 +1,43 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "Is anyone there?","Hey","Hola", "Hello", "Yello"],
+         "responses": ["Hello", "Welcome back!", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time", "okay then"],
+         "responses": ["See you!", "Have a nice day.", "okay bye."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me", "Thanks for that", "Thanks for the help"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [""],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "I don't understand", "Can you repeat that?"],
+         "context": [""]
+        },
+        {"tag": "purpose",
+         "patterns": ["How you could help me?", "What you can do?", "What do you do?", "How you can be helpful?"],
+         "responses": ["I can give you any information available on the internet included and not limited to: GK, medical symptoms, date, weather, location details, etc"],
+         "context": [""]
+        },
+        {"tag": "weather",
+         "patterns": ["Weather today", "What is the weather today?"],
+         "responses": ["Please specify a location: eg; Bangalore"],
+         "context": "Search weather"
+        },
+	{ "tag": "Search weather",
+	  "patterns": [],
+	  "responses": ["Checking..."],
+	  "context_filter": ["Search weather"]
+	},
+	{"tag": "social",
+         "patterns": ["How are you?", "Whats up?",  "What is going on?", "What are you up to?"],
+         "responses": ["All good. Ask me something.", "Waiting for your next question", "Quiz me"],
+         "context": [""]
+        }
+   ]
+}
