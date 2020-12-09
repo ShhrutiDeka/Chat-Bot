@@ -34,6 +34,11 @@
 	  "responses": ["Checking..."],
 	  "context_filter": ["Search weather"]
 	},
+	{ "tag": "Search age",
+	  "patterns": ["How old is", "age"],
+	  "responses": ["Checking..."],
+	  "context": [""]
+	},
 	{"tag": "social",
          "patterns": ["How are you?", "Whats up?",  "What is going on?", "What are you up to?"],
          "responses": ["All good. Ask me something.", "Waiting for your next question", "Quiz me"],
